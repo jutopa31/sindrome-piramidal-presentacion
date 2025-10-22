@@ -314,6 +314,18 @@ export default function App() {
                 />
               </div>
             )}
+            {/* QR en esquina superior izquierda */}
+            <div className="absolute top-6 left-6 z-20">
+              <img
+                src="/images/image23.jpg"
+                alt="QR Code"
+                className="w-32 h-32 object-contain rounded-lg shadow-lg bg-white p-2"
+              />
+            </div>
+            {/* Link visible (no clickeable) para que los alumnos lo escriban */}
+            <div className="absolute bottom-6 left-6 z-20 text-sm text-gray-700 font-mono bg-white/80 px-3 py-2 rounded shadow">
+              sindrome-extrapiramidal.vercel.app
+            </div>
             <div className="z-10 text-center">
               {slide.subtitle && (
                 <p className="text-2xl text-blue-600 mb-2">{slide.subtitle}</p>
